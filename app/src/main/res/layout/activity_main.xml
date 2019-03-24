@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Carpool"
+            android:textSize="35dp"
+            android:fontFamily="serif"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Total miles driven per day"
+            android:textSize="20dp"
+            android:id="@+id/miles"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"/>
+        <TextView
+            android:textColor="#000"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Cost per gallon of gasoline"
+            android:textSize="20dp"
+            android:id="@+id/gallons"
+            android:layout_below="@+id/miles"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="serif"/>
+        <TextView
+            android:textColor="#000"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Average miles per gallon"
+            android:textSize="20dp"
+            android:fontFamily="serif"
+            android:id="@+id/average"
+            android:layout_below="@+id/gallons"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:textColor="#000"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Parking fees per day"
+            android:textSize="20dp"
+            android:id="@+id/fees"
+            android:fontFamily="serif"
+            android:layout_below="@+id/average"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:textColor="#000"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Tolls per day"
+            android:textSize="20dp"
+            android:id="@+id/tolls"
+            android:fontFamily="serif"
+            android:layout_below="@+id/fees"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:textColor="#000"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="Carpooling cost"
+            android:textSize="20dp"
+            android:id="@+id/carpool"
+            android:layout_below="@+id/tolls"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/v1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/miles"
+            android:drawableBottom="@android:color/white"
+            android:text="10"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/v2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/miles"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/miles"
+            android:text="20"
+         />
+        <EditText
+            android:id="@+id/v3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/miles"
+            android:layout_below="@+id/gallons"
+            android:layout_marginTop="10dp"
+            android:text="30"/>
+        <EditText
+            android:id="@+id/v4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/miles"
+            android:layout_below="@+id/average"
+            android:layout_marginTop="10dp"
+            android:text="40"/>
+        <EditText
+            android:id="@+id/v5"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/miles"
+            android:layout_below="@+id/fees"
+            android:layout_marginTop="10dp"
+            android:text="50"/>
+        <EditText
+            android:id="@+id/v6"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/miles"
+            android:layout_below="@+id/tolls"
+            android:layout_marginTop="10dp"
+            android:text="80"/>
+        <Button
+            android:id="@+id/but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carpool"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:text="Submit"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/yo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carpool"
+            android:layout_marginTop="30dp"
+            android:text="Submit"
+            android:textSize="20dp"/>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
